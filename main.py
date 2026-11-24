@@ -14,7 +14,7 @@ SIDE = 1024
 PAPER = 246          # newsprint off-white
 INK = 26             # near-black ink
 FADE = 118           # grey for rules and captions
-OUTPUT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "entry.png")
+OUTPUT = os.path.join(os.environ.get("MAKEFUN_OUTPUT_DIR", "/output"), "entry.png")
 
 # ---------------------------------------------------------------------------
 # Typeface. Each glyph is seven rows of five pixels, rows joined with '/'.
